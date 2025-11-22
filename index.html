@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self Made Trader — Landing</title>
+  <meta name="description" content="Self Made Trader — premium crypto signals & VIP group" />
+  <style>
+    /* Simple modern reset + layout CSS (single file) */
+    :root{--accent:#f6b93b;--bg:#0f1720;--muted:#a6b0bb;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071021 0%, #0b1220 100%);color:#e6eef6}
+    a{color:inherit;text-decoration:none}
+
+    .container{max-width:1100px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:56px;width:56px;object-fit:contain;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+    .brand h1{font-size:20px;margin:0;letter-spacing:0.6px}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a.button{background:var(--glass);padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:26px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.6);}
+    .hero h2{font-size:34px;margin:0 0 12px}
+    .sub{color:var(--muted);line-height:1.6}
+
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .cta a{padding:12px 18px;border-radius:12px;font-weight:700}
+    .cta .primary{background:linear-gradient(90deg,var(--accent),#f3d07a);color:#071021}
+    .cta .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* right column preview */
+    .preview{display:flex;flex-direction:column;gap:12px}
+    .preview .badge{background:#071725;border-radius:12px;padding:12px;display:flex;align-items:center;gap:12px}
+    .preview img{width:100%;border-radius:12px;object-fit:cover}
+
+    /* features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    .feature{background:var(--glass);padding:18px;border-radius:12px}
+    .feature h4{margin:0 0 8px}
+    .feature p{margin:0;color:var(--muted)}
+
+    footer{margin-top:34px;padding:18px;border-radius:12px;background:rgba(255,255,255,0.02);display:flex;justify-content:space-between;align-items:center}
+
+    /* WhatsApp floating button */
+    .whatsapp-float{position:fixed;right:20px;bottom:20px;background:linear-gradient(90deg,#25D366,#128C7E);width:90px;height:90px;border-radius:999px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,40,20,0.45);z-index:1000}
+    .whatsapp-float img{width:32px;height:32px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .brand img{height:48px;width:48px}
+    }
+    @media (max-width:560px){
+      .features{grid-template-columns:1fr}
+      .container{padding:12px}
+      .hero h2{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- YOUR UPLOADED LOGO (local path) -->
+        <img src="/mnt/data/WhatsApp Image 2025-09-13 at 1.41.17 AM.jpeg" alt="Self Made Trader Logo" />
+        <div>
+          <h1>Self Made Trader</h1>
+          <div style="color:var(--muted);font-size:12px">Premium crypto signals & VIP support</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="button" href="#features">Services</a>
+        <a class="button" href="#pricing">Pricing</a>
+        <!-- Replace Telegram with WhatsApp link as requested -->
+        <a class="button" href="https://wa.me/923220744807?text=Hello%20can%20I%20get%20more%20info%20regarding%20this" target="_blank">Whatsapp me Now!!</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card">
+          <h2>Real-time crypto signals. Trade with confidence.</h2>
+          <p class="sub">Join <strong>Self Made Trader</strong> — everything is 100% free. We guide you step‑by‑step on how to trade safely without violating any Meta policies. Clear entry/exit targets and risk management shared on every signal.</p>
+
+          <div class="cta">
+            <a class="primary" href="https://wa.me/923220744807?text=Hello%20can%20I%20get%20more%20info%20regarding%20this" target="_blank">Whatsapp me Now!!</a>
+            <a class="ghost" href="#pricing">See Plans</a>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted);font-size:13px">All guidance is educational and policy‑safe — no paid plans, no subscriptions, fully free.</div>
+        </div>
+
+        <aside class="preview">
+          <div class="badge card">
+            <div style="flex:1">
+              <strong>Live Signal</strong>
+              <div style="color:var(--muted);font-size:13px">BTC/USDT — Long • Entry 64,200 • TP 66,000</div>
+            </div>
+          </div>
+
+          <!-- SAMPLE IMAGE SLOTS: replace these images with your own 'evidence' images -->
+          <img src="/mnt/data/WhatsApp Image 2025-09-13 at 1.41.17 AM.jpeg" alt="screenshot-1" />
+          <img src="/mnt/data/WhatsApp Image 2025-09-13 at 1.41.17 AM.jpeg" alt="screenshot-2" />
+        </aside>
+      </section>
+
+      <section id="features" class="features">
+        <div class="feature card">
+          <h4>Verified Signals</h4>
+          <p>Each signal includes entry, stop-loss, and take-profit. Signals are time-stamped and recorded.</p>
+        </div>
+        <div class="feature card">
+          <h4>VIP Support</h4>
+          <p>24/7 group + 1-on-1 mentoring available to premium members.</p>
+        </div>
+        <div class="feature card">
+          <h4>Risk Management</h4>
+          <p>We provide position-sizing guidance so you know how much to risk per trade.</p>
+        </div>
+      </section>
+
+      
+
+    </main>
+
+    <footer>
+      <div>© <strong>Self Made Trader</strong> — All rights reserved</div>
+      <div style="color:var(--muted)">Built with care • <a href="#features">Services</a></div>
+    </footer>
+  </div>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-float" href="https://wa.me/923220744807?text=Hello%20can%20I%20get%20more%20info%20regarding%20this" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="/mnt/data/WhatsApp Image 2025-09-13 at 1.41.17 AM.jpeg" alt="wa" style="border-radius:6px;width:32px;height:32px;object-fit:cover" />
+  </a>
+
+  <script>
+    // Small helper: open in new window for external links
+    document.querySelectorAll('a[target="_blank"]').forEach(a=>a.addEventListener('click',e=>{
+      // keeps default behavior; included for future hooks
+    }));
+
+    // Quick accessibility: keyboard focus for whatsapp button
+    document.querySelector('.whatsapp-float').addEventListener('keydown',e=>{
+      if(e.key === 'Enter') window.location = e.target.href;
+    });
+  </script>
+</body>
+</html>
